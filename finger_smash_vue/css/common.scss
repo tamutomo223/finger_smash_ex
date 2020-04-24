@@ -1,0 +1,12 @@
+@import "default";
+@import "function";
+@import "variable";
+
+header {
+  background-color: #012573;
+  .header_logo {
+    @include vwHeightChange(50, 1600);
+    @include vwWidthChange(250, 1600);
+    @include vwPaddingChangeFull(10, 0, 10, 10, 1600);
+  }
+}
