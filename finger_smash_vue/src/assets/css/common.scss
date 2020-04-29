@@ -1,0 +1,39 @@
+@import "default";
+@import "function";
+@import "variable";
+
+header {
+  background-color: #012573;
+  display: flex;
+  .header_logo {
+    @include vwHeightChange(50, 1600);
+    @include vwWidthChange(250, 1600);
+    @include vwPaddingChangeFull(10, 0, 10, 10, 1600);
+  }
+  .header_user_name {
+    @include vwFontChange(20, 1600);
+    @include vwPaddingChange(0, 40, 1600);
+    align-items: center;
+  }
+  .header_logout {
+    @include vwPaddingChange(0, 40, 1600);
+    margin: 0 0 0 auto;
+    button {
+      @include vwFontChange(20, 1600);
+      color: white;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.title_block {
+  @include vwFontChange(45, 1600);
+  @include vwPaddingChangeFull(40, 0, 5, 0, 1600);
+  @include vwWidthChange(400, 1600);
+  margin: auto;
+  display: block;
+  border-bottom: solid 3px $navy;
+}
